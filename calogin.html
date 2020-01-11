@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+<style>
+body
+{
+background-image:url(kaboom2.jpeg);
+background-image-repeat:no-repeat;
+background-image-size:cover;
+}
+td
+{
+padding:5px;
+font-size:20px;
+color:black;
+font-family:cursive;
+}
+#i
+{
+width:100%;
+padding:5px;
+font-size:20px;
+color:black;
+font-family:cursive;
+border-radius:50px;
+}
+select,textarea
+{
+padding:10px;
+background-color:white;
+font-size:30px;
+font-family:cursive;
+border-radius:30px;
+width:100%;
+}
+input[type=Login]
+{
+padding:10px;
+background-color:green;
+font-size:30px;
+font-family:cursive;
+border-radius:30px;
+float:right;
+width=30%;
+}
+</style>
+</head>
+ <form>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="i" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="i" required>
+
+   <!-- <button type="submit" onclick="abcd.html">Login</button>-->
+   <input type="submit" value="submit" onclick=window.open("file:///C:/Users/user/Desktop/SEM%202/HTML%20programs/abcd.html")>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+</html>
