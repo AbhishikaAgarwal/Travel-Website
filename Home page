@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+.item1 {grid-area: header ; }
+.item2 {grid-area: menu ; }
+.item3 {grid-area: main; }
+.item4 {grid-area: right; }
+
+.grid-container{
+display: grid;
+grid-template-areas:
+'header header header header '
+'menu menu menu menu' 
+'main main main main';
+}
+.grid-container > div {
+padding:5px;
+font-size:30px;
+}
+
+.body {font-family: verdana;
+}
+
+.topbar{font-family: courier-new ;}
+
+.text-block 
+{
+  font-color:FFD700;
+  font-family: verdana ;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  font-size: 28px;
+  background-color: fade;
+  color: white;
+  padding-left: 80px;
+  padding-right: 600px;
+}
+</style>
+<title> Travel </title>
+</head>
+
+<body style="font-family:georgia;">
+
+<div class="topbar">
+<pre> <h2> Home         <a href="cahotelbooking.html">Hotel Booking</a>          <a href="caflightbooking.html">Flight Bookings</a>          <a href="CAaboutus.html">About Us</a>          <a href="cacabbooking.html">Book a cab</a>          <a href="caform.html">Register</a>          <a href="calogin.html">Login</a>  </pre></h2>   
+</div>
+
+<hr/>
+
+<div class="container">
+<img src="paris.jpg" width="100%" height"30%">
+
+<div class="text-block"> 
+<h1> <pre> ADVENTURE TRAVEL</pre> </h1>    
+</div>
+</div>
+
+<div class="body" style="background-color:FFD700; color:black ; padding:40px;">
+  <h2>Travel makes one modest!!</h2>
+  <p>The world offers alot to see.You just have to look!</p>
+</div> 
+
+<p> <h2><center><u><b> OUR BEST OFFERS </b></u></center></h2> </p>
+
+<div class="grid-container">
+<div class="item1"> <h3 style="background-color: grey; color: white;"><center> London </center></h3> </div>
+<div class="item2"><img src="london.jpg" width="400px" height="300px"></div>
+<div class="item3"> <h5 style="font-family:arial"><ul><li>Vist the top 10 attractions</li>
+ <li>have ticket and offers, day trips</li>
+ <li>Buckingham palace tour and more!</li></ul></h5></div>
+
+
+
+<div class="grid-container">
+<div class="item1"> <h3 style="background-color: green; color: white;"><center> Italy </center></h3> </div>
+<div class="item2"> <img src="maxresdefault.jpg" width="400px" height="300px"></div>
+<div class="item3"> <h5 style="font-family:arial"><ul> <li>Museums of Florence</li>
+ <li>Visit the Vatican in Rome</li>
+ <li>Go Treasure Hunting in Florence and more!</li></ul></h5></div>
+</div>
+
+
+<div class="grid-container">
+<div class="item1"> <h3 style="background-color: DA1B1B; color: white;"><center> Russia </center></h3></div>
+<div class="item2"><img src="Fall-season-in-Italy.jpg" width="400px" height="300px"></div>
+<div class="item3"> <h5 style="font-family:arial"><ul><li>Get introduced to Russian Ballet</li>
+ <li>Swing by a Russian Circus.</li>
+ <li> Taste the local Cuisines and more!</li></ul></h5></div>
+</div>
+
+<div class="grid-container">
+<div class="item1"> <h3 style="background-color: 1B28D5; color: white;"><center> France </center></h3></div>
+<div class="item2"><img src="venice.jpg" width="400px" height="300px"></div>
+<div class="item3"> <h5 style="font-family:arial"><ul><li>Feel like you are at the top of the World in the Eiffel Tower</li>
+ <li>Discover Lille like never before</li>
+ <li>Bike across Monaco!</li></ul></h5></div>
+</div>
+
+</div>
+<p>&copy; 2019 Home<p>
+</body>
+
+</html>
