@@ -1,0 +1,97 @@
+
+<html>
+
+<head>
+<style>
+
+.body {  background-image: url(C:\Users\moham\Desktop\HTML\priroda-nebo-oblaka-samolet.jpg); } 
+</style>
+
+<title>Fight Booking</title>
+</head>
+
+<body>
+
+<center> <h1 style="background-color: grey; color: white;">Flight Booking</h1> </center>
+
+
+<div class="body" style="background-color:FFD700; color:black ; padding:40px;">
+<h4>From</h4> 
+<input type="text" >
+
+<h4>To</h4> 
+<input type="text"> 
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+<h4>Departing Date</h4> 
+<input type="date" >
+
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+ d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+<h4>Returning Date</h4> 
+<input type="date" >
+
+<h4>Seats</h4>
+<form>
+<input type="radio" name="gender" value="male" checked> 1<br>
+<input type="radio" name="gender" value="female" checked> 2<br>
+<input type="radio" name="gender" value="other" checked> 3
+</form>
+
+
+<h4>Class</h4>
+ 
+<form>
+<select name="cars" size="3" multiple>
+<option value="volvo">Economy </option>
+<option value="saab">Business</option>
+<option value="fiat">First Class</option>
+</select>
+<br><br>
+
+<form>
+<input type="checkbox" name="gender" value="male" checked> Kids(4-10) <br>
+</form>
+
+<button>Search</button>
+</form>
+</div>
+</body>
+</html>
+
