@@ -1,0 +1,119 @@
+
+<html>
+
+<head>
+<title>Hotel Booking Booking</title>
+
+
+
+</head>
+
+
+
+<body>
+
+<center> <h1 style="background-color: grey; color: white;">Hotel Booking</h1></center>
+
+
+
+<div class="body" style="background-color:FFD700; color:black ; padding:40px;">
+
+<h4>City</h4> 
+<input type="text" >
+
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+
+<h4>Checkin Date</h4> 
+<input type="date" >
+
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+ d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+<h4>Checkout Date</h4> 
+<input type="date" >
+
+<h4>Rooms</h4>
+<form>
+<input type="radio" name="gender" value="male" checked> 1<br>
+<input type="radio" name="gender" value="female" checked> 2<br>
+<input type="radio" name="gender" value="other" checked> 3
+</form>
+
+
+<h4>Star</h4>
+ 
+<form>
+<select name="cars" size="3" multiple>
+<option value="volvo">3-star </option>
+<option value="saab">4-star</option>
+<option value="fiat">5-star</option>
+</select>
+<br><br>
+
+<form>
+<input type="checkbox" name="gender" value="male" checked> Kids(4-10) <br>
+</form>
+
+<!--<button>Search</button>-->
+<input type="submit" value="submit" onclick=window.open("file:///C:/Users/user/Desktop/SEM%202/HTML%20programs/pqrs.html")>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
